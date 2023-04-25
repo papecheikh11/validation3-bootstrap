@@ -1,0 +1,472 @@
+*{
+    border: 0; margin: 0; box-sizing: border-box;
+}
+/* ----------------------------entete-------------------------------------  */
+header{
+    background-position: center;
+    width: auto;
+}
+#entete{
+    background-image: url(images/imback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#entete img{
+    width: 18%;
+}
+.prem-partie{
+    flex-direction: column;
+    text-align: center;
+}
+.prem-partie h2{
+    margin-top: 200px; font-style: italic; letter-spacing: 3px;
+    
+}
+.prem-partie h1{
+    font-size: 60px;
+    letter-spacing: 7px;
+}
+.prem-partie button{
+    width: 15%;
+    height: auto;
+    background-color: rgb(236, 154, 14);
+    font-size: 18px;
+    margin-bottom: 200px;
+    margin-top: 25px;
+}
+/* ----------------------------services-------------------------------------  */
+#services{
+    margin-top: 100px;
+}
+/* ----------------------------portfolio-------------------------------------  */
+#portfolio{
+    margin-top: 100px;
+    width: 100%;
+}
+#portfolio .card a{
+    position: relative;
+    text-decoration: none;
+}
+/* #portfolio .card a .hover{
+    
+    color: #fff;
+} */
+
+/* #portfolio .card a .hover:hover{
+    font-weight: bold;
+    width: 100%;
+    font-size: 80px;
+    position: relative;
+    display: flex;
+    padding-bottom: 80px;
+    margin-top: -250px;
+    left: 135px;
+    color: #fff;
+    z-index: 2;
+} */
+
+#portfolio .card a:hover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 265px;
+    background-color: rgb(231, 130, 13);
+    opacity: 0.8;
+}
+
+
+.titre{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+/* ----------------------------services-------------------------------------  */
+#services .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#services .container i{
+    color: azure;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(236, 154, 14);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding-top: 25px;
+}
+/* ----------------------------about-------------------------------------  */
+
+/* The actual timeline (la ligne verticale) */
+.main-timeline {
+    position: relative;
+  }
+  
+  /* The actual timeline (la ligne verticale) */
+  .main-timeline::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: auto;
+    background-color: #b3acac;
+    top: 1.30%;
+    bottom: 0;
+    left: 50%;
+  }
+  
+  /* Container autour du contenu */
+  .timeline {
+    position: relative;
+    width: 33%;
+  }
+  
+  /* mise en forme élément sur le timeline */
+  .timeline::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .timeline:nth-child(1)::after{
+    background-image: url(images/cercle.jpg);
+    right: -51%;
+    border: 7px solid #e2e2e2;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+.timeline:nth-child(2)::after{
+  background-image: url(images/cercle-2.jpg);
+  left: -42%;
+  border: 7px solid #e2e2e2;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+.timeline:nth-child(3)::after{
+  background-image: url(images/cercle3.jpg);
+  right: -51%;
+  border: 7px solid #e2e2e2;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+.timeline:nth-child(4)::after{
+  background-image: url(images/cercle4.jpg);
+  left: -42%;
+  border: 7px solid #e2e2e2;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+}
+  /* Place the container to the left */
+  .left {
+    padding: 0px 0px 20px 40px;
+    left: 7%;
+    text-align: right;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    padding: 0px 0px 20px 40px;
+    left: 57%;
+  }
+
+  .timeline-image{
+    position: relative;
+    background-color: orange;
+    color: white;
+    top: 15px;
+    left: 43.50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font-size: 19px;
+    z-index: 1;
+    border: 7px solid #e2e2e2;
+    text-align: center;
+    align-items: center;
+    padding-top: 2vw;
+  }
+
+/* ----------------------------team-------------------------------------  */
+#team{
+    margin-top: 100px;
+    width: 100%;
+}
+
+#team img{
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid rgb(201, 188, 188);
+}
+#team .row .sociaux{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   margin-left: 40px;
+   margin-right: 40px;
+}
+#team .row .sociaux i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #363535;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+/* ----------------------------texte-------------------------------------  */
+#texte .container{
+    margin-top: 100px;
+    display: flex;
+    text-align: center;
+    width: 80%;
+}
+/* ----------------------------logo-------------------------------------  */
+#logo{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+#logo img{
+    width: 250px;
+    height: 100px;
+    filter: grayscale(2);
+    opacity: 0.6;
+}
+/* ----------------------------form-------------------------------------  */
+#form .left{
+    display: flex;
+    flex-direction: column;
+}
+#form{
+    background-image: url(images/carte.jpg);
+}
+#form .left{
+    gap: 20px;
+}
+#form .left input{
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+    height: 70px;
+    border-radius: 12px;
+    width: 80%;
+}
+#form .right textarea{
+    border-radius: 12px;
+    width: 80%;
+}
+
+#form{
+    color: #fff;
+}
+#form p{
+    opacity: 0.5;
+}
+#form button{
+    display: flex;
+    padding-left: 3%;
+    
+     align-items: center;
+     justify-content: center;
+     width: 200px;
+     height: 60px;
+     background-color: rgb(236, 154, 14);
+     color: #fff;
+     font-size: 18px;
+     font-weight: bold;
+     border: none;
+     margin-bottom: 50px;
+     margin-top: 25px;
+     border-radius: 10px;
+     opacity: 0.7;
+}
+/* ----------------------------footer-------------------------------------  */
+footer .sociaux i{
+
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #363535;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin-left: 15px;
+}
+footer{
+    margin-top: 30px;
+}
+/* ----------------------------responsivité-------------------------------------  */
+@media screen AND (max-width: 700px) {
+
+    
+    /* ----------------------------header-----------------------*/
+    #entete img{
+        width: 38%;
+       
+    }
+
+    /* -------------------------------about------------------- */
+
+   /* Place the timelime to the left */
+   .main-timeline::after {
+    left: 31px;
+  }
+
+  .card a .card-img-top{
+    display:block;
+    height: 263px;
+    width: 100%;
+  }
+  .card a:hover::after {
+    content:'';
+    position:absolute;
+    left:0; 
+    top:0;
+    height: 263px;
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 166, 0, 0.879);
+    transition: 1s;
+  }
+
+  /* Full-width containers */
+  .timeline {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 0px;
+  }
+
+  .left {
+    left: 0%;
+    text-align: left;
+  }
+
+  /* faire en sorte que tous les containers de classe right se comportent comme se de gauche */
+  .right {
+    left: 0%;
+  }
+
+  .timeline:nth-child(1)::after{ 
+    left: -1%;
+    width: 70px;
+    height: 70px;
+}
+.timeline:nth-child(2)::after{
+    left: -1%;
+    width: 70px;
+    height: 70px;
+}
+.timeline:nth-child(3)::after{
+    left: -1%;
+    width: 70px;
+    height: 70px;
+}
+.timeline:nth-child(4)::after{
+    left: -1%;
+    width: 70px;
+    height: 70px;
+}
+.timeline-image{
+  position: relative;
+  background-color: orange;
+  color: white;
+  top: 15px;
+  left: -1%;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+.timeline-image h4{
+  padding-top: 2px;
+  font-size: 11px;
+}
+
+/* ---------------portfolio------------------- */
+#portfolio .container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------team------------------------ */
+
+#team{
+    margin-top: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+#team img{
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid rgb(201, 188, 188);
+    display: flex;
+    align-content: center;
+    
+}
+#team .row .sociaux{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   margin-left: 40px;
+   margin-right: 40px;
+}
+#team .row .sociaux i{
+    display: flex;
+    margin-left: 10px;
+    border-radius: 50%;
+    background: #363535;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    
+}
+#team .col-lg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ----------------logo------------------- */
+
+#logo .container-fluid .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---------------form----------------- */
+
+
+#form .container .col .row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#form .container .col input, #form .container .col textarea{
+    width: 100%;
+    margin-left: 10px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+}
